@@ -32,6 +32,11 @@ VALUES
 	('Phantomime', 2023),
 	('American Idiot', 2004);
 
+INSERT INTO albums(name, release_year)
+VALUES
+	('S&M2', 2020),
+	('MTV Unplugged in New York', 1994);
+
 -- Треки
 
 INSERT INTO tracks(name, duration, album_id)
@@ -45,6 +50,13 @@ VALUES
 	('Phantom of the Opera', 443, 8),
 	('Boulevard of Broken Dreams', 262 , 9);
 
+INSERT INTO tracks(name, duration, album_id)
+VALUES 
+	('All Within My Hands', 373, 10),
+	('Enter Sandman', 528, 10),
+	('The Man Who Sold the World', 260, 11),
+	('All Apologies', 262, 11);
+
 -- Сборники
 
 INSERT INTO collections(name, release_year)
@@ -53,6 +65,10 @@ VALUES
 	('Sword', 2000),
 	('Random', 2024),
 	('Souls', 2002);
+
+INSERT INTO collections(name, release_year)
+VALUES
+	('Live', 2020);
 
 -- Альбомы исполнителей
 
@@ -67,6 +83,11 @@ VALUES
 	(7, 3),
 	(8, 4),
 	(9, 5);
+
+INSERT INTO album_singer(album_id, singer_id)
+VALUES
+	(10, 2),
+	(11, 1),
 
 -- Треки в сборниках
 
@@ -87,6 +108,13 @@ VALUES
 	(6, 4),
 	(7, 4),
 	(8, 4);
+
+INSERT INTO track_collection(track_id, collection_id)
+VALUES
+	(9, 5),
+	(10, 5),
+	(11, 5),
+	(12, 5);
 
 -- Жанры исполнителей
 
